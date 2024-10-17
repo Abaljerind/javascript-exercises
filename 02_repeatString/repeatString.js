@@ -1,11 +1,14 @@
 const repeatString = function (str, num) {
-  str = "";
+  if (num < 0) return "ERROR";
+
+  let word = "";
   for (let i = 0; i < num; i++) {
-    str += "hey";
+    word += str;
   }
-  return str;
+  return word;
 };
 
-console.log(repeatString("hey", 5));
+console.log(repeatString("hello", 10));
+
 // Do not edit below this line
 module.exports = repeatString;
